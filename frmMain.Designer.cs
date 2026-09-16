@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtSomething = new System.Windows.Forms.TextBox();
+            this.txtProduct = new System.Windows.Forms.TextBox();
             this.lvReceipt = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
-            // txtSomething
+            // txtProduct
             // 
-            this.txtSomething.Location = new System.Drawing.Point(14, 12);
-            this.txtSomething.Name = "txtSomething";
-            this.txtSomething.Size = new System.Drawing.Size(463, 20);
-            this.txtSomething.TabIndex = 0;
+            this.txtProduct.Location = new System.Drawing.Point(14, 12);
+            this.txtProduct.Name = "txtProduct";
+            this.txtProduct.Size = new System.Drawing.Size(463, 20);
+            this.txtProduct.TabIndex = 0;
             // 
             // lvReceipt
             // 
@@ -52,7 +52,7 @@
             // 
             this.ClientSize = new System.Drawing.Size(489, 261);
             this.Controls.Add(this.lvReceipt);
-            this.Controls.Add(this.txtSomething);
+            this.Controls.Add(this.txtProduct);
             this.Name = "frmMain";
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.ResumeLayout(false);
@@ -61,7 +61,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox txtSomething;
+        private System.Windows.Forms.TextBox txtProduct;
         private System.Windows.Forms.ListView lvReceipt;
     }
 }
