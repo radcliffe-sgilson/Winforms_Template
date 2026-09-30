@@ -65,13 +65,18 @@ namespace WinForms_Template
         private void ChangeQuantity()
         {
             string quantityValue = txtProduct.Text;
-            int quantity = -1;
-            if(int.TryParse(quantityValue, out quantity))
+            if(int.TryParse(quantityValue, out int quantity))
             {
+                if (quantity < 1 || quantity > 100)
+                {
+                    //show an error message
+                }
+                else
+                {
                     ListViewItem latestItem = lvReceipt.Items[lvReceipt.Items.Count - 1];
                     latestItem.SubItems[3].Text = quantity.ToString();
                     latestItem.SubItems[4].Text = (float.Parse(latestItem.SubItems[2].Text) * quantity).ToString();
-                
+                }
             }
             txtProduct.Text = "";
         }
